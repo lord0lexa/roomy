@@ -1,0 +1,7 @@
+servlets\showOfficesServlet.class
+servlets\manageBookingsServlet.class
+servlets\LoginServlet.class
+servlets\LogoutServlet.class
+servlets\homepageServlet.class
+servlets\showCalendarServlet.class
+servlets\bookDateServlet.class

@@ -1,0 +1,143 @@
+body{
+    background-color: rgb(227, 157, 181);
+}
+a{
+    color: rgb(227, 157, 181);
+    font-size: large;
+    text-decoration: none;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a:hover{
+    color: rgb(255, 255, 255);
+}
+h1,h2,h3{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(73, 9, 58);
+    text-align: center;
+}
+p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav__list {
+    display: flex;
+}
+.nav__item {
+    display: flex;
+    justify-content: center; /* Zentriert den Inhalt horizontal */
+    align-items: center; /* Zentriert den Inhalt vertikal */
+    flex: 1;
+    column-count: 3;
+}
+.centered{
+    text-align: center;
+}
+.cutebutton{
+    background-color: rgb(227, 157, 181);
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    padding: 15px 140px;
+}
+.cutebutton:hover{
+    color: rgb(227, 157, 181);
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(73, 9, 58);
+    padding: 15px 140px;
+}
+.cuteBackwardsbutton{
+    color: rgb(227, 157, 181);
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(73, 9, 58);
+    padding: 15px 140px;
+    border: none;
+}
+form>.cuteBackwardsbutton{
+    width:400px;
+}
+.cuteBackwardsbutton:hover{
+    background-color: rgb(176, 101, 128);
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(73, 9, 58);
+    padding: 15px 140px;
+}
+.thickstyling{
+    font-size: large;
+    align-items: center;
+    font-weight: 700;
+}
+.calendarbutton{
+    background-color: rgb(227, 157, 181);
+    font-size: medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px 80px;
+    border-color: rgb(239, 174, 197);
+}
+.calendarbutton:hover{
+    color: rgb(227, 157, 181);
+    font-size: medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(73, 9, 58);
+    padding: 15px 80px;
+}
+.container{
+    display: grid;
+    grid-template-rows: 80px ,80%, 80px ;
+    grid-template-columns: 1fr, 80%, 1fr;
+}
+.container>header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.container>main{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color:  rgb(239, 174, 197);
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    column-count: 3;
+}
+.container>article{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    column-count: 3;
+}
+.container>form{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    width: 400px;
+}
+
+article{
+    column-count: 3;
+    background-color: rgb(73, 9, 58);
+    padding: 40px 140px;
+    margin: 30px;
+}
+article>p{
+    color: rgb(248, 213, 243);
+    text-align: left;
+    font-weight: 200;
+}
+.getBackLink{
+    color: rgb(73, 9, 58);
+    font-size: large;
+    text-decoration: none;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.darkBackground{
+    background-color: rgb(73, 9, 58);
+}
