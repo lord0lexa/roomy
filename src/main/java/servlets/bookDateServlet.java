@@ -36,7 +36,7 @@ public class bookDateServlet extends HttpServlet {
         String username = "";
 
         for (Cookie cookie : cookies) {
-            if (cookie.getName().equals("user"))
+            if (cookie.getName().equals("username"))
                 username = cookie.getValue();
 
             if (cookie.getName().equals("officeID"))

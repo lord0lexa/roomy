@@ -1,5 +1,7 @@
 servlets\showOfficesServlet.class
+servlets\creatingAccServlet.class
 servlets\manageBookingsServlet.class
+servlets\createAccServlet.class
 servlets\LoginServlet.class
 servlets\LogoutServlet.class
 servlets\homepageServlet.class

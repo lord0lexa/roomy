@@ -46,6 +46,20 @@ p{
     background-color: rgb(73, 9, 58);
     padding: 15px 140px;
 }
+.loginbutton{
+    background-color: rgb(227, 157, 181);
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: none;
+    padding: 10px 80px;
+}
+.loginbutton:hover{
+    color: rgb(227, 157, 181);
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(73, 9, 58);
+    padding: 10px 80px;
+}
 .cuteBackwardsbutton{
     color: rgb(227, 157, 181);
     font-size: large;

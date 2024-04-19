@@ -11,7 +11,7 @@
             <div class="container">
                 <header>
                     <h1>Roomy</h1>
-                    <h2>Welcome back!</h2>
+                    <h2>Willkommen zurück <%= (String)request.getAttribute("username")%>!</h2>
                 </header>
                 <main>
                     <nav>
@@ -34,8 +34,8 @@
                         <form action="/roomy/logout" method="post">
                             <input type="submit" value="Logout &crarr;" class="cuteBackwardsbutton">
                         </form>
-                        <% if(request.getAttribute("admin").toString().equalsIgnoreCase("true")){%>
-                            <form action="/roomy/createAcc" method="post">
+                        <% if(request.getAttribute("admin") != null && request.getAttribute("admin").toString().equalsIgnoreCase("true")){%>
+                            <form action="/roomy/creatingAcc" method="post">
                                 <input type="submit" value="Neuen Account erstellen" class="cuteBackwardsbutton">
                             </form>
 
@@ -43,6 +43,9 @@
                                 <input type="submit" value="Office hinzufügen" class="cuteBackwardsbutton">
                             </form>
                             <%} %>
+                        <form action="/roomy/Accsetting" method="post">
+                            <input type="submit" value="Einstellungen" class="cuteBackwardsbutton">
+                        </form>
                     </nav>
                 </main>
             </div>
