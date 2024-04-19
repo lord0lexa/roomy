@@ -65,7 +65,7 @@ public class LoginServlet extends HttpServlet {
             conn.setAutoCommit(false);
 
             // INSERT Statement
-            String query = "SELECT * FROM LoginData WHERE username = ? AND pw = ?";
+            String query = "SELECT * FROM loginData WHERE username = ? AND pw = ?";
 
             try (PreparedStatement pstmt = conn.prepareStatement(query)) {
                 // setting parameters
@@ -95,7 +95,7 @@ public class LoginServlet extends HttpServlet {
 
         if (loginSuccessful) {
             // Create a cookie named "user" with the username as its value
-            Cookie loginCookie = new Cookie("user", username); 
+            Cookie loginCookie = new Cookie("username", username); 
             // Set expiry for 30 minutes
             loginCookie.setMaxAge(30*60); 
              // Add cookie to response
@@ -107,6 +107,7 @@ public class LoginServlet extends HttpServlet {
                 admin = true;
     
             request.setAttribute("admin", admin);
+            request.setAttribute("username", username);
             RequestDispatcher dispatcher = request.getRequestDispatcher("homepage.jsp");
             dispatcher.forward(request, response);
         } 

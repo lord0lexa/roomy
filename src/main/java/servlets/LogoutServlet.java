@@ -24,7 +24,7 @@ public class LogoutServlet extends HttpServlet {
             throws ServletException, IOException {
         
         //deleting cookie
-        Cookie deleteCookie = new Cookie("user", "");
+        Cookie deleteCookie = new Cookie("username", "");
         deleteCookie.setMaxAge(0); 
         // Add cookie to response
         response.addCookie(deleteCookie);

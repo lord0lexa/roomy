@@ -29,19 +29,14 @@ public class homepageServlet extends HttpServlet {
         Cookie[] cookies = request.getCookies();
         String username = "";
         for (Cookie cookie : cookies) {
-            if (cookie.getName().equals("user"))
+            if (cookie.getName().equals("username"))
                 username = cookie.getValue();
-        }
-
-        // redirect if not logged in
-        if (username.isEmpty()) {
-            response.sendRedirect("/roomy/index.html");
-            return;
         }
         boolean admin = false;
         if (username.equals("admin"))
             admin = true;
 
+        request.setAttribute("username", username);
         request.setAttribute("admin", admin);
         RequestDispatcher dispatcher = request.getRequestDispatcher("homepage.jsp");
         dispatcher.forward(request, response);

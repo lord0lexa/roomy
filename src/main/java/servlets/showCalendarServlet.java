@@ -43,7 +43,7 @@ public class showCalendarServlet extends HttpServlet {
         Cookie[] cookies = request.getCookies();
         String username = "";
         for (Cookie cookie : cookies) {
-            if (cookie.getName().equals("user"))
+            if (cookie.getName().equals("username"))
                 username = cookie.getValue();
         }
         if(username.isEmpty()){
